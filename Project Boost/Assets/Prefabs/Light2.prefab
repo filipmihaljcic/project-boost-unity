@@ -301,7 +301,7 @@ GameObject:
   - component: {fileID: 1213413477559308936}
   - component: {fileID: 1213413477559308937}
   m_Layer: 0
-  m_Name: Lght2
+  m_Name: Light2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
