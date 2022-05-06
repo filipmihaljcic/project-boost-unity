@@ -4,12 +4,12 @@ namespace Project.Scripts
 {
     public class Oscilator : MonoBehaviour
     {
-        private Vector3 _startingPosition;
         [SerializeField] Vector3 _movementVector;
         [SerializeField] [Range(0, 1)] float _movementFactor;
         [SerializeField] float _period;
+        
         private float _cycles;
-
+        private Vector3 _startingPosition;
         private Vector3 _offset;
 
         private void Start()
