@@ -16,7 +16,13 @@ namespace Project.Scripts
         {
             _startingPosition = transform.position;
         }
+        
         private void Update()
+        {
+            SinWave();
+        }
+        
+        private void SinWave()
         {
             _cycles = Time.time / _period; // growing over time 
 
@@ -26,7 +32,7 @@ namespace Project.Scripts
             _movementFactor = (_rawSinWave + 1f) / 2f;
 
             _offset = _movementVector * _movementFactor; // how much it will move 
-            transform.position = _startingPosition + _offset; 
-        } 
+            transform.position = _startingPosition + _offset; // update position of object
+        }
     }
 }
