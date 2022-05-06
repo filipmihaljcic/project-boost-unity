@@ -76,7 +76,7 @@ namespace Project.Scripts
             _audioSource.Stop();
             _successParticles.Play();
             _audioSource.PlayOneShot(_successSound);
-            //disable controls for our player 
+            // disable controls for our player 
             GetComponent<Movement>().enabled = false; 
             Invoke(nameof(LoadNextLevel), _loadTimeDelay);   
         }
